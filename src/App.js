@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-const time = new Date().toLocaleString();
+import Clock from './Clock.js';
+import Message from './Message.js';
+import Reddit from './Reddit.js';
 
 class App extends React.Component {
   // constructor(props) {
@@ -28,18 +29,20 @@ class App extends React.Component {
         </section>
 
         <section className="reddit">
-          <h2 className="header">POPULAR ON R/JAVASCRIPT</h2>
+          <h4 className="header">POPULAR ON R/JAVASCRIPT</h4>
+          <Reddit/>
         </section>
 
         <section className="javascript">
-          <h2 className="header">RELEVANT JAVASCRIPT HISTORY</h2>
+          <h4 className="header">RELEVANT JAVASCRIPT HISTORY</h4>
           <div className="time">
-          {time}
+          <Clock/>
           </div>
+          <Message/>
         </section>
 
         <section className="github">
-          <h2 className="header">GITHUB ISSUES HISTORY</h2>
+          <h4 className="header">GITHUB ISSUES HISTORY</h4>
         <div className="adv">
         </div>
         </section>
