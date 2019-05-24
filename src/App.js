@@ -26,15 +26,20 @@ class App extends React.Component {
             <li><a href="#">PLAYGROUND</a></li>
             <li><a href="#">HELP/INTRO</a></li>
           </ul>
+          <a href="http://initab.com/"><img className="logo" src="../img/initab_logo_white.png"/></a>
+          <div className="sns">
+            <a href="#"><img className="icon" src="../img/fb.png"/></a>
+            <a href="https://github.com/chibee1"><img className="icon" src="../img/github.png"/></a>
+          </div>
         </section>
 
         <section className="reddit">
-          <h4 className="header">POPULAR ON R/JAVASCRIPT</h4>
+          <h3 className="header">POPULAR ON R/JAVASCRIPT</h3>
           <Reddit/>
         </section>
 
         <section className="javascript">
-          <h4 className="header">RELEVANT JAVASCRIPT HISTORY</h4>
+          <h3 className="header">RELEVANT JAVASCRIPT HISTORY</h3>
           <div className="time">
           <Clock/>
           </div>
@@ -42,7 +47,7 @@ class App extends React.Component {
         </section>
 
         <section className="github">
-          <h4 className="header">GITHUB ISSUES HISTORY</h4>
+          <h3 className="header">GITHUB ISSUES HISTORY</h3>
         <div className="adv">
         </div>
         </section>

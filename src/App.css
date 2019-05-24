@@ -7,6 +7,11 @@ html {
 body {
   font-family: "Hiragino Kaku Gothic ProN", monospace, sans-serif;
   text-align: left;
+  color: #6272a4;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -16,21 +21,13 @@ a:link, a:visited, a:hover, a:active {
 
 
 .App {
-  text-align: center;
   display: -webkit-flex;
   display: flex;
   height: 100vh;
   background-color: #212529;
 }
 
-.App ul {
-  display: inline-box;
-  list-style: none;
-}
 
-.App li {
-  margin: 10px 0;
-}
 
 /* .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -65,14 +62,56 @@ a:link, a:visited, a:hover, a:active {
 .header {
   color: aqua;
   font-weight: normal;
+  text-align: center;
 }
 
 .navi {
   display: block;
+  position: relative;
   background-color: #44475a;
   height: 100%;
   -webkit-flex: 1;
   flex: 1;
+}
+
+.navi ul {
+  display: inline-box;
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+.navi li {
+  margin: 12px 0;
+}
+
+.logo {
+  position: absolute;
+  bottom: 70px;
+  left: 12%;
+  /* background-color: white; */
+  width: 100px;
+  height: 30px;
+}
+
+.sns {
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  /* background-color: white; */
+  width: 100%;
+  height: 20px;
+  padding: 0 3px;
+}
+
+.icon {
+  display: inline-block;
+  background-color: blue;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 0 3px;
 }
 
 .reddit {
@@ -92,6 +131,7 @@ a:link, a:visited, a:hover, a:active {
 
 .time {
   color: #6272a4;
+  text-align: center;
   /* font-size: 120px;
   font-weight: 400px; */
 }
