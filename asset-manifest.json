@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/self_prework/static/css/main.00804bb6.chunk.css",
-    "main.js": "/self_prework/static/js/main.3e384c04.chunk.js",
-    "main.js.map": "/self_prework/static/js/main.3e384c04.chunk.js.map",
-    "runtime~main.js": "/self_prework/static/js/runtime~main.c61e9251.js",
-    "runtime~main.js.map": "/self_prework/static/js/runtime~main.c61e9251.js.map",
-    "static/js/2.d6a534e5.chunk.js": "/self_prework/static/js/2.d6a534e5.chunk.js",
-    "static/js/2.d6a534e5.chunk.js.map": "/self_prework/static/js/2.d6a534e5.chunk.js.map",
-    "index.html": "/self_prework/index.html",
-    "precache-manifest.cd8de86bb2bf806cdb9a5721a9ea57b5.js": "/self_prework/precache-manifest.cd8de86bb2bf806cdb9a5721a9ea57b5.js",
-    "service-worker.js": "/self_prework/service-worker.js",
-    "static/css/main.00804bb6.chunk.css.map": "/self_prework/static/css/main.00804bb6.chunk.css.map",
-    "static/media/logo.svg": "/self_prework/static/media/logo.ee7cd8ed.svg"
+    "main.css": "/chibee-test/static/css/main.00804bb6.chunk.css",
+    "main.js": "/chibee-test/static/js/main.e56a8449.chunk.js",
+    "main.js.map": "/chibee-test/static/js/main.e56a8449.chunk.js.map",
+    "runtime~main.js": "/chibee-test/static/js/runtime~main.53e55e8e.js",
+    "runtime~main.js.map": "/chibee-test/static/js/runtime~main.53e55e8e.js.map",
+    "static/js/2.d6a534e5.chunk.js": "/chibee-test/static/js/2.d6a534e5.chunk.js",
+    "static/js/2.d6a534e5.chunk.js.map": "/chibee-test/static/js/2.d6a534e5.chunk.js.map",
+    "index.html": "/chibee-test/index.html",
+    "precache-manifest.cfbeacdd4f3a0335c42ab4139ffc4fbb.js": "/chibee-test/precache-manifest.cfbeacdd4f3a0335c42ab4139ffc4fbb.js",
+    "service-worker.js": "/chibee-test/service-worker.js",
+    "static/css/main.00804bb6.chunk.css.map": "/chibee-test/static/css/main.00804bb6.chunk.css.map",
+    "static/media/logo.svg": "/chibee-test/static/media/logo.ee7cd8ed.svg"
   }
 }
