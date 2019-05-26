@@ -1,37 +1,42 @@
 import React from 'react';
 
-const Reddit = () => {
-  const data = [
-    {id: 1, title: "Hi", name: "Chiaki"},
-    {id: 2, title: "Hey", name: "Takumi"}
-  ];
-
-  let test = {
-    "1":{
-        title: "Hi",
-        name: "Chiaki"
-    },
-    "2":{
-        title: "Hey",
-        name: "Takumi"
-    }
+class Reddit extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      news: []
+    };
   }
 
-  return (
-    <div>
-      {data.map((data) => <RedditItem title={data.title} name={data.name}/> )}
-    </div>
-  );
-}
+  componentWillMount(){
+    this.fetchResponse();
+  }
 
-const RedditItem = (props) => {
-  return (
-    <div>
-      <h4>{props.title}</h4>
-      <h5>{props.name}</h5>
-    </div>
-  )
-}
+  fetchResponse(){
+    fetch('http://localhost:3001/news')
+    .then( res => res.json() )
+    .then( res => {
+      console.log(res);
+      this.setState({
+        news : res
+      });
+    })
+  }
 
+  render() {
+    return (
+      <div class="reddit-wrapper">
+        {this.state.news.map( news => (
+              <div class="reddit-entry" key={news.id}>
+                <p>{news.title}</p>
+                <p>Posted by: {news.author}</p>
+                <p>Reddit score: {news.score}</p>
+                <p>Link to Comments</p>
+              </div>
+          ))}
+      </div>
+    );
+  }
+}
 
 export default Reddit;

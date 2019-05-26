@@ -150,3 +150,22 @@ a:link, a:visited, a:hover, a:active {
   height: 20%;
   vertical-align: bottom;
 }
+
+/* Reddit */
+
+.reddit-wrapper {
+  height: 90%;
+  overflow: scroll;
+}
+
+.reddit-entry {
+  margin: 20px 10px;
+  padding: 5px;
+  border-left: 3px solid #44475a;
+}
+
+.reddit-entry p {
+  margin: 5px 0;
+}
+
+.reddit-wrapper::-webkit-scrollbar { width: 0 !important }
